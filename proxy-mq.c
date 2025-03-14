@@ -95,7 +95,7 @@ int get_value(int key, char *value1, int *N_value2, double *V_value2, struct Coo
         memcpy(V_value2, values.V_value2, (*N_value2) * sizeof(double));
         *value3 = values.value3;
     }
-    return values.result;
+    return values;
 }
 
 int modify_value(int key, char *value1, int N_value2, double *V_value2, struct Coord value3) {
